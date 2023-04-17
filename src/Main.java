@@ -9,7 +9,7 @@ import javax.swing.table.DefaultTableModel;
 
 
 public class Main {
-    protected TableCellRenderer renderer;
+
     public static void main(String[] args) {
         JFrame ventana = new JFrame();
         ventana.setBounds(0, 0, 1600, 900);
@@ -21,7 +21,7 @@ public class Main {
         JMenu menuArchivo = new JMenu("Archivo");
         JMenu menuAcciones = new JMenu("Acciones");
         JMenu menuAyuda = new JMenu("Ayuda");
-        menuBar.setBounds(100, 100, 1600, 40);
+        menuBar.setBounds(0, 0, 1600, 40);
 
         JButton botonNuevaLiga = new JButton("Nueva liga"); // instanciamos el campo y le indicampos entre los parentesis el contenido que debe mostrar
         botonNuevaLiga.setBounds(100, 200, 200, 40); //damos tamaño y posicion a los distintos campos
@@ -73,11 +73,11 @@ public class Main {
         //Creacion del header de la tabla
         JTableHeader header = tabla.getTableHeader();
         tabla.setTableHeader(header);
-        header.setBounds(450, 200, 1150, 40);
+        header.setBounds(450, 200, 1000, 40);
         DefaultTableModel modeloTabla= new DefaultTableModel(cabecera,22);
 
         tabla.setModel(modeloTabla);
-        tabla.setBounds(450, 230, 1150, 350);
+        tabla.setBounds(450, 230, 1000, 350);
 
 
 
@@ -105,6 +105,8 @@ public class Main {
 
         //hacemos que nuestra ventana sea visible indicando true
         ventana.setVisible(true);
+        //Deshabilitamos la redimension de la ventana
+        ventana.setResizable(false);
 
     }
 }
