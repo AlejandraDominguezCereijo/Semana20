@@ -34,7 +34,7 @@ public class Main {
         });
 
         JButton botonJugarLiga = new JButton("Jugar liga");
-        botonJugarLiga.setBounds(100, 260, 200, 40);
+        botonJugarLiga.setBounds(100, 265, 200, 40);
         botonJugarLiga.setEnabled(true);
         botonJugarLiga.addActionListener(new ActionListener() {
             @Override
@@ -44,17 +44,17 @@ public class Main {
         });
 
         JButton botonSiguienteJornada = new JButton("Siguiente Jornada");
-        botonSiguienteJornada.setBounds(100, 320, 200, 40);
+        botonSiguienteJornada.setBounds(100, 330, 200, 40);
         botonSiguienteJornada.setEnabled(false);
 
 
         JButton botonSimular = new JButton("Simulacion completada");
-        botonSimular.setBounds(100, 380, 200, 40);
+        botonSimular.setBounds(100, 395, 200, 40);
         botonSimular.setEnabled(false);
 
 
         JButton botonSalir = new JButton("Salir");
-        botonSalir.setBounds(100, 440, 200, 40);
+        botonSalir.setBounds(100, 540, 200, 40);
         botonSalir.setEnabled(true);
         botonSalir.addActionListener(new ActionListener() {
             @Override
